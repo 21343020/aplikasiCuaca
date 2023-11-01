@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>News</title>
+    <link rel="icon" href="/img/news.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+    <body>
+        <div class="atasan">
+            {{>header}}
+        </div>
+        
+        <div class="main-content">
+            
+            <div id="news"></div>
+
+            <script>
+                var apiUrl = "http://api.mediastack.com/v1/news?access_key=d720404cc4348abbe9c292f7e226eb7a&languages=en&countries=id&limit=5";
+
+                fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data && data.data) {
+                        var articles = data.data;
+                        var newsHtml = "";
+
+                        for (var i = 0; i < articles.length; i++) {
+                            var article = articles[i];
+                            newsHtml += "<div class='card'>";
+                            newsHtml += "<img src='" + article.image + "'>";
+                            newsHtml += "<h2>" + article.title + "</h2>";
+                            newsHtml += "<a>" + article.description + "</a>";
+                            newsHtml += "<a href='" + article.url + "'>Read more</a>";
+                            newsHtml += "</div>";
+                        }
+
+                        document.getElementById("news").innerHTML = newsHtml;
+                    } else {
+                        console.log("Error: Invalid data");
+                    }
+                })
+                .catch(error => console.log(error));
+            </script>
+        </div>
+        {{>footer}}
+    </body>
+</html>

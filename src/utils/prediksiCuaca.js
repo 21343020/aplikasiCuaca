@@ -8,7 +8,7 @@ const forecast = (latitude, longitude, callback) => {
             callback('Tidak dapat terkoneksi ke layanan', undefined)
         }
         else if(response.body.error) {
-            callback('Tida dapat menemukan lokasi', undefined)
+            callback('Tidak dapat menemukan lokasi', undefined)
         }
         else {
             callback(undefined, 'Info Cuaca: '+ response.body.current.weather_descriptions[0] +'. '+'Suhu saat ini adalah '+ response.body.current.temperature +' derajat. '+'Index UV adalah '+ response.body.current.uv_index+ ' nm. '+'Visibilitas '+ response.body.current.visibility +' Kilometer')

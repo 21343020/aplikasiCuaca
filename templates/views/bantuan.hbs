@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bantuan</title>
+    <link rel="icon" href="/img/cuaca.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <div class="main-content2">
+        <p>{{faq1}}</p>
+        <p>B: Halaman ini adalah sumber informasi untuk membantu Anda memahami penggunaan aplikasi ini dengan lebih baik. Di sini, Anda dapat menemukan jawaban atas pertanyaan umum dan informasi penting terkait aplikasi ini.</p>
+        <p>{{faq2}}</p>
+        <p>B: API adalah singkatan dari Application Programming Interface. Ini adalah kumpulan aturan dan protokol yang memungkinkan berbagai perangkat lunak untuk berkomunikasi satu sama lain. API memungkinkan aplikasi untuk mengakses dan menggunakan fungsi atau data dari aplikasi atau layanan lain.</p>
+        <p>{{faq3}}</p>
+        <p>B: Aplikasi ini menggunakan beberapa API untuk menyediakan informasi dan layanan kepada pengguna. Berikut adalah daftar API yang digunakan:</p>
+        <p>   1. Mediastack API: Digunakan untuk mendapatkan informasi terkini seputar berita dan artikel.</p>
+        <p>   2. Weatherstack API: Digunakan untuk menyajikan data cuaca terkini dan perkiraan cuaca mendatang.</p>
+        <p>   3. Mapbox API: Digunakan untuk menyediakan peta interaktif dan fungsionalitas terkait peta.</p>
+        <p>{{faq4}}</p>
+        <p>B: Salah satu pola arsitektur API yang digunakan dalam aplikasi ini adalah RESTful. RESTful API memanfaatkan metode HTTP standar (seperti GET, POST, PUT, DELETE) untuk berkomunikasi dan memanipulasi sumber daya (resources) melalui URL. Ini adalah pendekatan umum dan populer dalam pengembangan web API.</p>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+</html>

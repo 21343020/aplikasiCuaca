@@ -1,0 +1,145 @@
+body {
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: initial;
+    text-align: center;
+
+    margin: auto;
+}
+
+.atasan {
+    flex-grow: 1;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-content {
+    flex-grow: 1;
+    max-width: 800px;
+    overflow: auto;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-content p {
+    color: #ffffff;
+}
+
+.main-content1 img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.main-content2 p {
+    text-align: left;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 55px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    text-align: center;
+    
+}
+
+header a:hover {
+    color: #26bee8;
+}
+
+.portrait {
+    margin-left: 150px;
+    margin-right: 50px;
+    width: 250px;
+}
+
+.tentang {
+    display: flex;
+    text-align: left;
+}
+
+.tentang p {
+    margin-top: 100px;
+}
+
+input {
+    border: 2px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 0px solid #cccccc;
+    background: #888888;
+    color: white;
+    padding: 9px;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #000000;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}

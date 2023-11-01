@@ -32,7 +32,11 @@ app.get('/bantuan', (req, res) => {
     res.render('bantuan', {
         judul       : 'Bantuan',
         nama        : 'Budi Prasetyo',
-        teksBantuan : 'ini adalah teks bantuan'
+        teksBantuan : 'ini adalah teks bantuan',
+        faq1 : "A: Halaman ini digunakan untuk apa?",
+        faq2 : "A: Apa itu API?",
+        faq3 : "A: API apa yang digunakan dalam aplikasi ini?",
+        faq4 : "A: Pola arsitektur API RESTful "
     })
 })
 
@@ -64,6 +68,13 @@ app.get('/infoCuaca', (req, res) => {
 app.get('/tentang', (req, res) => {
     res.render('tentang', {
         judul   : 'Tentang Saya',
+        nama    : 'Budi Prasetyo'
+    })
+})
+
+app.get('/berita', (req, res) => {
+    res.render('berita', {
+        judul   : 'Berita',
         nama    : 'Budi Prasetyo'
     })
 })
